@@ -7,18 +7,18 @@
 
 ## 可视化界面
 
-<http://verdaccio.singularitysystems.com.cn/>
+<http://verdaccio.请换成你的地址.com.cn/>
 
 ## npm 添加私服用户
 
 ```
-npm adduser --registry http://verdaccio.singularitysystems.com.cn/
+npm adduser --registry http://verdaccio.请换成你的地址.com.cn/
 ```
 
 ## npm 添加登录
 
 ```
-npm login  --registry http://verdaccio.singularitysystems.com.cn/
+npm login  --registry http://verdaccio.请换成你的地址.com.cn/
 ```
 
 ## npm 发包
@@ -31,14 +31,14 @@ lerna publish
 
 ```javascript
  "publishConfig": {
-    "registry": "http://verdaccio.singularitysystems.com.cn/"
+    "registry": "http://verdaccio.请换成你的地址.com.cn/"
   },
 ```
 
 ## 引用包需要添加文件`.npmrc`
 
 ```
-registry=http://verdaccio.singularitysystems.com.cn/
+registry=http://verdaccio.请换成你的地址.com.cn/
 
 ```
 
@@ -52,4 +52,4 @@ yarn doc
 
 ## api 文档
 
-[访问我的文档](https://kobecyl.github.io/gtfyLib/)
+[访问我的文档](https://请换成你的地址.github.io//)

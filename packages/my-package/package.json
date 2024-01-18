@@ -32,7 +32,7 @@
     "react": "^17.0.0"
   },
   "publishConfig": {
-    "registry": "http://verdaccio.singularitysystems.com.cn/"
+    "registry": "http://verdaccio.请换成你的地址.com.cn/"
   },
   "gitHead": "031f4efc971932c0391f83b1d793ea6e52425c9a"
 }
