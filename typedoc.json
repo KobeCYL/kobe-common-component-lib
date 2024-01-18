@@ -1,0 +1,7 @@
+{
+  "name": "My Library",
+  "out": "./docs",
+  "exclude": ["**/node_modules/**", "**/test/**"],
+  "entryPoints": ["./packages/singu-utils/src/index.ts"],
+  "tsconfig": ["./packages/singu-utils/tsconfig.json"]
+}

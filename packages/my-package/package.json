@@ -1,0 +1,38 @@
+{
+  "name": "my-package",
+  "version": "0.1.25",
+  "description": "测试",
+  "homepage": "https://github.com/Singularity-Systems/singu-utils-front-end/tree/main/packages/my-package#readme",
+  "repository": {
+    "type": "git",
+    "url": "cd tsconfig.json"
+  },
+  "license": "ISC",
+  "author": "kobe <417125111@qq.com>",
+  "type": "module",
+  "main": "dist/bundle.amd.js",
+  "directories": {
+    "lib": "dist",
+    "esm": "esm"
+  },
+  "files": [
+    "dist",
+    "esm"
+  ],
+  "scripts": {
+    "build": "yarn build:bundle && yarn build:esm",
+    "build:bundle": "rollup -c",
+    "build:esm": "tsc -p tsconfig.json",
+    "build:watch": "rollup -c -w",
+    "publish": "lerna publish"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.8",
+    "antd": "^4.20.2",
+    "react": "^17.0.0"
+  },
+  "publishConfig": {
+    "registry": "http://verdaccio.singularitysystems.com.cn/"
+  },
+  "gitHead": "031f4efc971932c0391f83b1d793ea6e52425c9a"
+}

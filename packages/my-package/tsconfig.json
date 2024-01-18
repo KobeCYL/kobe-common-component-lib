@@ -1,0 +1,9 @@
+{
+  "extends": "../../config/tsconfig.json",
+  "compilerOptions": {
+    "module": "es6",
+    "outDir": "esm"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

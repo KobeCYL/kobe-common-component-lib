@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>&DiacriticalGrave;gtfy&lowbar;Package&DiacriticalGrave;</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="gtfy_package"><code>gtfy_Package</code></h1>
+<h2 id="node-版本">node 版本</h2>
+<p>需要 16.14.0
+建议下载一个 nvm 进行切换 node 版本.</p>
+<h2 id="可视化界面">可视化界面</h2>
+<p><a href="http://verdaccio.singularitysystems.com.cn/">http://verdaccio.singularitysystems.com.cn/</a></p>
+<h2 id="npm-添加私服用户">npm 添加私服用户</h2>
+<pre><code>npm adduser --registry http://verdaccio.singularitysystems.com.cn/
+</code></pre>
+<h2 id="npm-添加登录">npm 添加登录</h2>
+<pre><code>npm login  --registry http://verdaccio.singularitysystems.com.cn/
+</code></pre>
+<h2 id="npm-发包">npm 发包</h2>
+<p>lerna publish</p>
+<h2 id="新建包注意">新建包注意</h2>
+<ol>
+<li>pack.json 需要添加如下</li>
+</ol>
+<pre><code class="language-javascript"> <span class="hljs-string">&quot;publishConfig&quot;</span>: {
+    <span class="hljs-string">&quot;registry&quot;</span>: <span class="hljs-string">&quot;http://verdaccio.singularitysystems.com.cn/&quot;</span>
+  },
+</code></pre>
+<h2 id="引用包需要添加文件npmrc">引用包需要添加文件<code>.npmrc</code></h2>
+<pre><code>registry=http://verdaccio.singularitysystems.com.cn/
+
+</code></pre>
+<p>如果不加则会发布到 npm 官方镜像中.</p>
+<h2 id="生成文档">生成文档</h2>
+<pre><code>yarn doc
+</code></pre>
+<h2 id="api-文档">api 文档</h2>
+<p><a href="https://kobecyl.github.io/gtfyLib/">访问我的文档</a></p>
+
+        
+        
+    </body>
+    </html>
